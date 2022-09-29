@@ -2,6 +2,15 @@ import { useEffect, useState } from "react";
 import "./styles.css";
 export default function App() {
   const [data, setData] = useState([]);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [address, setAddress] = useState("");
+
+  function GetData(e) {
+    console.log(name, email, mobile, address);
+  }
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos").then((result) => {
       result.json().then((resp) => {
@@ -12,7 +21,7 @@ export default function App() {
   }, []);
   return (
     <div className="App">
-      <h1>User Data</h1>
+      {/* <h1>User Data</h1>
       <h1>Get API Call </h1>
       <table border="1">
         <tbody>
@@ -21,14 +30,14 @@ export default function App() {
             <td>Name</td>
             <td>Email</td>
           </tr>
-          {/* {data.map((item, i) => (
+          {data.map((item, i) => (
             <tr key={i}>
               <td>{item.userId}</td>
               <td>{item.id}</td>
               <td>{item.title}</td>
               <td>{item.completed}</td>
             </tr>
-          ))} */}
+          ))}
 
           {data.map((item, i) => (
             <tr key={i}>
@@ -39,7 +48,41 @@ export default function App() {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
+
+      <input
+        type="text"
+        onChange={(e) => {
+          setData(e.target.value);
+        }}
+      />
+      <br />
+      <br />
+      <input
+        type="text"
+        onChange={(e) => {
+          setData(e.target.value);
+        }}
+      />
+      <br />
+      <br />
+      <input
+        type="text"
+        onChange={(e) => {
+          setData(e.target.value);
+        }}
+      />
+      <br />
+      <br />
+      <input
+        type="text"
+        onChange={(e) => {
+          setData(e.target.value);
+        }}
+      />
+      <br />
+      <br />
+      <button onClick={GetData}>Get Data</button>
     </div>
   );
 }
