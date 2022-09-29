@@ -1,9 +1,21 @@
+import { useEffect, useState } from "react";
 import "./styles.css";
-import { Link } from "react-dom";
 export default function App() {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/todos").then((result) => {
+      result.json().then((resp) => {
+        console.log(resp);
+        // setData(resp);
+      });
+    });
+  });
   return (
     <div className="App">
-      <Link to="/">Hello</Link>
+      <h1>User Data</h1>
+      {data.map((item) => {
+        <h3>item.userId</h3>;
+      })}
     </div>
   );
 }
