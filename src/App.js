@@ -5,17 +5,41 @@ export default function App() {
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos").then((result) => {
       result.json().then((resp) => {
-        console.log(resp);
-        // setData(resp);
+        // console.log(resp);
+        setData(resp);
       });
     });
-  });
+  }, []);
   return (
     <div className="App">
       <h1>User Data</h1>
-      {data.map((item) => {
-        <h3>item.userId</h3>;
-      })}
+      <h1>Get API Call </h1>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Email</td>
+          </tr>
+          {/* {data.map((item, i) => (
+            <tr key={i}>
+              <td>{item.userId}</td>
+              <td>{item.id}</td>
+              <td>{item.title}</td>
+              <td>{item.completed}</td>
+            </tr>
+          ))} */}
+
+          {data.map((item, i) => (
+            <tr key={i}>
+              <td>{item.userId}</td>
+              <td>{item.id}</td>
+              <td>{item.title}</td>
+              <td>{item.completed}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
