@@ -1,26 +1,34 @@
 import { useEffect, useState } from "react";
 import "./styles.css";
 export default function App() {
-  const [data, setData] = useState([]);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [mobile, setMobile] = useState("");
-  const [address, setAddress] = useState("");
+  // const [data, setData] = useState([]);
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [mobile, setMobile] = useState("");
+  // const [address, setAddress] = useState("");
 
-  function GetData() {
-    console.log(name, email, mobile, address);
-  }
+  // function GetData() {
+  //   console.log(name, email, mobile, address);
+  // }
 
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos").then((result) => {
-      result.json().then((resp) => {
-        // console.log(resp);
-        setData(resp);
-      });
-    });
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://jsonplaceholder.typicode.com/todos").then((result) => {
+  //     result.json().then((resp) => {
+  //       // console.log(resp);
+  //       setData(resp);
+  //     });
+  //   });
+  // }, []);
   return (
     <div className="App">
+
+         
+
+
+
+
+
+
       {/* <h1>User Data</h1>
       <h1>Get API Call </h1>
       <table border="1">
@@ -50,7 +58,7 @@ export default function App() {
         </tbody>
       </table> */}
 
-      <input
+      {/* <input
         type="text"
         value={name}
         onChange={(e) => {
@@ -90,7 +98,7 @@ export default function App() {
       />
       <br />
       <br />
-      <button onClick={GetData}>Get Data</button>
+      <button onClick={GetData}>Get Data</button> */}
     </div>
   );
 }
