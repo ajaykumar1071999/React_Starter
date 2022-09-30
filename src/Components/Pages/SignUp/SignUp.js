@@ -1,7 +1,7 @@
 import {useState} from 'react';
 function SignUp()
 {
-
+const[data,setData]=useState([]);
 const[name,setName]=useState("");
 const[email,setEmail]=useState("");
 const[mobile,setMobile]=useState("");
@@ -9,7 +9,21 @@ const[dob,setDob]=useState("");
 const[address,setAddress]=useState("");
 function GetData()
 {
-    console.log(name,email,mobile,dob,address);
+    // data = data.push({
+    //     name,
+    //     email,
+    //     mobile,
+    //     dob,
+    //     address
+    // });
+
+    setData([...data, {
+        name,
+        email,
+        mobile,
+        dob,
+        address
+    }]);
 }
     return(
         <div>
@@ -32,13 +46,18 @@ function GetData()
                         <th>Date of Birth</th>
                         <th>Address</th>
                     </tr>
-                    <tr>
-                        <td>{name}</td>
-                        <td>{email}</td>
-                        <td>{mobile}</td>
-                        <td>{dob}</td>
-                        <td>{address}</td>
+
+                    if(data.length > 0){
+                     data.map(function(index, val){
+<tr>
+                        <td>{val.name}</td>
+                        <td>{val.email}</td>
+                        <td>{val.mobile}</td>
+                        <td>{val.dob}</td>
+                        <td>{val.address}</td>
                     </tr>
+                     });   
+                    }
                 </tbody>
             </table>
         </div>
