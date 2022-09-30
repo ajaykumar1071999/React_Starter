@@ -8,7 +8,7 @@ const[dob,setDob]=useState("");
 const[address,setAddress]=useState("");
 function GetData()
 {
-    console.log(name);
+    console.log(name,eemail,mobile,dob,address);
 }
     return(
         <div>
