@@ -1,6 +1,7 @@
 import {useState} from 'react';
 function SignUp()
 {
+
 const[name,setName]=useState("");
 const[email,setEmail]=useState("");
 const[mobile,setMobile]=useState("");
@@ -30,6 +31,9 @@ function GetData()
                         <th>Mobile No</th>
                         <th>Date of Birth</th>
                         <th>Address</th>
+                    </tr>
+                    <tr>
+                        <td>{name}</td>
                     </tr>
                 </tbody>
             </table>
