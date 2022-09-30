@@ -56,7 +56,7 @@ function GetData()
                         <td>{val.dob}</td>
                         <td>{val.address}</td>
                     </tr>
-                     });   
+                     })  
                     }
                 </tbody>
             </table>
