@@ -7,7 +7,7 @@ export default function App() {
   const [mobile, setMobile] = useState("");
   const [address, setAddress] = useState("");
 
-  function GetData(e) {
+  function GetData() {
     console.log(name, email, mobile, address);
   }
 
@@ -52,33 +52,41 @@ export default function App() {
 
       <input
         type="text"
+        value={name}
         onChange={(e) => {
-          setData(e.target.value);
+          setName(e.target.value);
         }}
+        name="name"
       />
       <br />
       <br />
       <input
         type="text"
+        value={email}
         onChange={(e) => {
-          setData(e.target.value);
+          setEmail(e.target.value);
         }}
+        name="email"
       />
       <br />
       <br />
       <input
         type="text"
+        value={mobile}
         onChange={(e) => {
-          setData(e.target.value);
+          setMobile(e.target.value);
         }}
+        name="mobile"
       />
       <br />
       <br />
       <input
         type="text"
+        value={address}
         onChange={(e) => {
-          setData(e.target.value);
+          setAddress(e.target.value);
         }}
+        name="address"
       />
       <br />
       <br />
