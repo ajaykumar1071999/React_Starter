@@ -21,6 +21,18 @@ function GetData()
             <input type="text" value={address} onChange={(e)=>{setAddress(e.target.value)}} name="address"/><br/><br/>
             
             <button onClick={GetData}>GetData</button>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email Id</th>
+                        <th>Mobile No</th>
+                        <th>Date of Birth</th>
+                        <th>Address</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     );
 }export default SignUp;
