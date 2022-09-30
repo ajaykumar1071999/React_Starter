@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import Head from "./Components/Pages/Head/Head";
+import SignUp from "./Components/Pages/SignUp/SignUp";
+// import Head from "./Components/Pages/Head/Head";
 // import Home from "./Components/Pages/Home/Home";
 import "./styles.css";
 export default function App() {
@@ -24,6 +25,33 @@ export default function App() {
   // }, []);
   return (
     <div className="App">
+<SignUp/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
          {/* <BrowserRouter>
          <Routes>
@@ -32,7 +60,7 @@ export default function App() {
           </Route>
          </Routes>
          </BrowserRouter>        */}
-         <Head/>
+         
          
 
 
