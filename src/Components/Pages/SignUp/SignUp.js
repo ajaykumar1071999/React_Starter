@@ -34,6 +34,10 @@ function GetData()
                     </tr>
                     <tr>
                         <td>{name}</td>
+                        <td>{email}</td>
+                        <td>{mobile}</td>
+                        <td>{dob}</td>
+                        <td>{address}</td>
                     </tr>
                 </tbody>
             </table>
