@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Head from "./Components/Pages/Head/Head";
-import Home from "./Components/Pages/Home/Home";
+// import Home from "./Components/Pages/Home/Home";
 import "./styles.css";
 export default function App() {
   // const [data, setData] = useState([]);
@@ -25,13 +25,13 @@ export default function App() {
   return (
     <div className="App">
 
-         <BrowserRouter>
+         {/* <BrowserRouter>
          <Routes>
           <Route path="Home" element={<Home/>}>
 
           </Route>
          </Routes>
-         </BrowserRouter>       
+         </BrowserRouter>        */}
          <Head/>
          
 
