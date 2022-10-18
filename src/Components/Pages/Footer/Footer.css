@@ -1,0 +1,19 @@
+.topdiv {
+  position: relative;
+}
+.topdiv > div {
+  float: left;
+  margin: 0%;
+  width: 25%;
+  background-color: #aaa;
+}
+@media screen and (max-width: 900px) {
+  .topdiv > div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .topdiv > div {
+    width: 100%;
+  }
+}

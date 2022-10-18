@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./SignUp.css";
 var data = [];
 function SignUp() {
   const [name, setName] = useState("");
@@ -26,8 +27,8 @@ function SignUp() {
     setAddress("");
   }
   return (
-    <div>
-      <h1>SignUp Form</h1>
+    <div className="topdiv1">
+      {/* <h1>SignUp Form</h1>
 
       <input
         type="text"
@@ -102,7 +103,7 @@ function SignUp() {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
     </div>
   );
 }

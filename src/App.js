@@ -1,11 +1,13 @@
 import SignUp from "./Components/Pages/SignUp/SignUp";
 import "./styles.css";
-import img from "./1.jpeg";
+
+import Footer from "./Components/Pages/Footer/Footer";
+import Head from "./Components/Pages/Head/Head";
 export default function App() {
   return (
-    <div className="App" style={{ backgroundImage: `url(${img})` }}>
-      <SignUp />
-      {/* <img src={img} /> */}
+    <div className="App">
+      <Head />
+      <Footer />
     </div>
   );
 }

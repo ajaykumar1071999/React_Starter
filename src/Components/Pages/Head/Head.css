@@ -1,0 +1,16 @@
+.topdiv1 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px;
+  background-color: #eee;
+}
+.topdiv1 > div {
+  margin: 5px;
+  padding: 10px;
+}
+@media screen and (max-width: 375px) {
+  .topdiv > div {
+    width: 100%;
+  }
+}
