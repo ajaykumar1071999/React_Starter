@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUp from "./Components/Pages/SignUp/SignUp";
 import "./styles.css";
 
@@ -6,8 +7,10 @@ import Head from "./Components/Pages/Head/Head";
 export default function App() {
   return (
     <div className="App">
-      <Head />
-      <Footer />
+      <BrowserRouter>
+        <Head />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
