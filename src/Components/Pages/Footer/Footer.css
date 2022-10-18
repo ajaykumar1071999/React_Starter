@@ -12,7 +12,7 @@
     width: 50%;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 720px) {
   .topdiv > div {
     width: 100%;
   }
