@@ -1,0 +1,21 @@
+.contentdiv {
+  height: 450px;
+  width: 100%;
+  margin: 5px 0px 0px 0px;
+}
+.contentdiv > a > div {
+  float: left;
+  height: auto;
+  width: 25%;
+  padding: 20px;
+}
+@media screen and (max-width: 900px) {
+  .contentdiv > a > div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contentdiv > a > div {
+    width: 100%;
+  }
+}
