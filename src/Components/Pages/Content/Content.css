@@ -1,13 +1,11 @@
 .contentdiv {
-  height: 450px;
-  width: 100%;
-  margin: 5px 0px 0px 0px;
+  box-sizing: border-box;
+  margin: 2px 0px 0px 0px;
 }
 .contentdiv > a > div {
   float: left;
-  height: auto;
   width: 25%;
-  padding: 20px;
+  padding: 1px;
 }
 @media screen and (max-width: 900px) {
   .contentdiv > a > div {

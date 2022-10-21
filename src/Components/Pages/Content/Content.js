@@ -7,16 +7,24 @@ function Content() {
   return (
     <div className="contentdiv">
       <Link>
-        <div style={{ backgroundImage: `url(${divimg})` }}>1</div>
+        <div>
+          <img src={divimg} alt="1" />
+        </div>
       </Link>
       <Link>
-        <div style={{ backgroundImage: `url(${divimg1})` }}>1</div>
+        <div>
+          <img src={divimg} alt="1" />
+        </div>
       </Link>
       <Link>
-        <div style={{ backgroundImage: `url(${divimg2})` }}>1</div>
+        <div>
+          <img src={divimg} alt="1" />
+        </div>
       </Link>
       <Link>
-        <div style={{ backgroundImage: `url(${divimg1})` }}>1</div>
+        <div>
+          <img src={divimg} alt="1" />
+        </div>
       </Link>
     </div>
   );
